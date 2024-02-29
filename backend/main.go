@@ -13,11 +13,6 @@ var (
 	cache *lru.Cache
 )
 
-type CacheItem struct {
-	Key   string
-	Value string
-}
-
 func init() {
 	cache, _ = lru.New(1024)
 }
