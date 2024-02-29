@@ -13,15 +13,19 @@ Imagine you have a limited amount of space in your cache, and you want to store 
 Example:
 
 1.) Empty Cache:
+
 *  Cache is empty, and you access Item A. A is now the most recently used item.
 
 2.) Cache with A:
+
 * Cache has Item A. You access Item B. B becomes the most recently used item, and A is now the second most recently used.
 
 3.) Cache with B and A:
+
 * Cache has both A and B. You access Item C. C becomes the most recently used item, B is now second, and A is third.
 
 4.) Cache Full - Remove Least Recently Used:
+
 * If you try to add Item D and the cache is full, the least recently used item (A) is removed to make space for D. Now, the order is D (most recent), C, and B.
 
 The goal of using LRU is to optimize the cache for the most frequently used items, ensuring that the data you need more often is readily available in the cache.
